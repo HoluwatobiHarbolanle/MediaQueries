@@ -1,0 +1,68 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes test {
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color: red;
+    }
+    40%{
+        background-color: blue;
+    }
+    60%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: green;
+    }
+    100%{
+        background-color: orange;
+    }
+}
+li{
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+li:hover{
+    border-bottom: 1px solid palevioletred;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+@media screen and (min-width: 720px) {
+    ul{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+#animate{
+    background-color:purple ;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: animate;
+    animation-duration: 5s;
+}
+@keyframes animate{
+    10%{
+        margin-left: 1rem;
+    }
+    50%{
+        margin-left: 5rem;
+    }
+    100%{
+        margin-left: 10rem;
+    }
+}
